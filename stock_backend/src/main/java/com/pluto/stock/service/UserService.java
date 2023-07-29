@@ -4,6 +4,8 @@ import com.pluto.stock.vo.req.LoginReqVo;
 import com.pluto.stock.vo.resp.LoginRespVo;
 import com.pluto.stock.vo.resp.R;
 
+import java.util.Map;
+
 /**
  * @author pluto
  * @date 7/27/23 21:03
@@ -16,4 +18,6 @@ public interface UserService {
      * @return
      */
     R<LoginRespVo> login(LoginReqVo vo);
+
+    R<Map> getCaptCha();
 }

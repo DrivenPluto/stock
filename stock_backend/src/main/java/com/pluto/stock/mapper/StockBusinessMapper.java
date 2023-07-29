@@ -1,7 +1,7 @@
 package com.pluto.stock.mapper;
 
 import com.pluto.stock.pojo.StockBusiness;
-import org.apache.ibatis.annotations.Mapper;
+
 
 import java.util.List;
 

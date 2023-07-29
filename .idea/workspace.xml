@@ -5,7 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d8a6e6e-eac0-4ca0-ba3e-4a649a3cb339" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/utils/IdWorker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stock_backend/src/test/java/com/pluto/stock/TestRedisTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0c0d9fc9-eab5-457b-b5ab-06d6fc3e067c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0c0d9fc9-eab5-457b-b5ab-06d6fc3e067c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0c0d9fc9-eab5-457b-b5ab-06d6fc3e067c/storage_v2/_src_/schema/sys.zb4BAA.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0c0d9fc9-eab5-457b-b5ab-06d6fc3e067c/storage_v2/_src_/schema/sys.zb4BAA.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock_backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/config/CommonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/config/CommonConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/mapper/StockBusinessMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/mapper/StockBusinessMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock_backend/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock_backend/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/config/CommonConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/config/CommonConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/service/impl/UserServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +40,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -30,17 +54,24 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="$USER_HOME$/devTool/local-maven" />
-        <option name="mavenHome" value="$USER_HOME$/devTool/apache-maven-3.8.5" />
-        <option name="userSettingsFile" value="$USER_HOME$/devTool/apache-maven-3.8.5/conf/settings.xml" />
+        <option name="mavenHome" value="$USER_HOME$/devTool/apache-maven-3.8.1" />
+        <option name="userSettingsFile" value="$USER_HOME$/devTool/apache-maven-3.8.1/conf/settings.xml" />
       </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
-    <option name="vmOptions" value="-DarchetypeCatalog=internal" />
+    <option name="vmOptions" value="-Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true" />
   </component>
   <component name="ProjectId" id="2T1W3Vxya7e4cJcH2gWMiJsoSxe" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -57,12 +88,12 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/plutodriven/java/IdeaProject/stock_parent/stock_parent/stock_backend/src/main/java/com/pluto/stock/vo/req",
+    "last_opened_file_path": "/Users/plutodriven/java/IdeaProject/stock_parent/stock_parent/stock_backend/src/main/java/com/pluto/stock/utils",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "vcs.Git",
+    "settings.editor.selected.configurable": "MavenSettings",
     "spring.configuration.checksum": "66f18be16a655754e2b8100c67504e8a"
   },
   "keyToStringList": {
@@ -71,19 +102,39 @@
     ]
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.pluto.stock.service.impl" />
       <recent name="com.pluto.stock.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/utils" />
       <recent name="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/vo/req" />
       <recent name="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/vo/resp" />
       <recent name="$PROJECT_DIR$/stock_backend/src/main/resources/mapper" />
       <recent name="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/pojo" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.StockApplication">
+    <configuration name="TestRedisTemplate.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="stock_backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pluto.stock.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.pluto.stock" />
+      <option name="MAIN_CLASS_NAME" value="com.pluto.stock.TestRedisTemplate" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StockApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="stock_backend" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.pluto.stock.StockApplication" />
@@ -100,6 +151,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.StockApplication" />
+        <item itemvalue="JUnit.TestRedisTemplate.test" />
+        <item itemvalue="Spring Boot.StockApplication" />
+        <item itemvalue="Spring Boot.StockApplication" />
+        <item itemvalue="Spring Boot.StockApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -115,7 +170,9 @@
       <workItem from="1690211207897" duration="134000" />
       <workItem from="1690211357911" duration="1551000" />
       <workItem from="1690376935184" duration="62000" />
-      <workItem from="1690377005077" duration="9797000" />
+      <workItem from="1690377005077" duration="12569000" />
+      <workItem from="1690554491459" duration="1697000" />
+      <workItem from="1690556197961" duration="6400000" />
     </task>
     <task id="LOCAL-00001" summary="完成用户登陆">
       <created>1690467436995</created>
@@ -124,14 +181,43 @@
       <option name="project" value="LOCAL" />
       <updated>1690467436995</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="完成用户登陆">
+      <created>1690467884522</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1690467884522</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="完成用户登陆" />
     <option name="LAST_COMMIT_MESSAGE" value="完成用户登陆" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/service/impl/UserServiceImpl.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
