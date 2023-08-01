@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "stock",
+      "type": "com.pluto.stock.config.vo.StockInfoConfig",
+      "sourceType": "com.pluto.stock.config.vo.StockInfoConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "stock.inner",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.pluto.stock.config.vo.StockInfoConfig"
+    },
+    {
+      "name": "stock.outer",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.pluto.stock.config.vo.StockInfoConfig"
+    }
+  ],
+  "hints": []
+}
