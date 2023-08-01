@@ -1,6 +1,11 @@
 package com.pluto.stock.mapper;
 
+import com.pluto.stock.common.utils.InnerMarketDomain;
 import com.pluto.stock.pojo.StockMarketIndexInfo;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.Date;
+import java.util.List;
 
 /**
 * @author plutodriven
@@ -22,4 +27,11 @@ public interface StockMarketIndexInfoMapper {
 
     int updateByPrimaryKey(StockMarketIndexInfo record);
 
+    /**
+     * 根据大盘id和时间查询大盘信息
+     * @param marketIds 大盘id
+     * @param timePoint 当前时间 （默认精确到分钟）
+     * @return
+     */
+    List<InnerMarketDomain> getMarketInfo(@Param("marketIds") List<String> marketIds, @Param("timePoint")Date timePoint);
 }

@@ -1,6 +1,12 @@
 package com.pluto.stock.mapper;
 
+import com.pluto.stock.common.utils.StockBlockRtInfoDomain;
+import com.pluto.stock.common.utils.StockUpdownDomain;
 import com.pluto.stock.pojo.StockBlockRtInfo;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.Date;
+import java.util.List;
 
 /**
 * @author plutodriven
@@ -21,5 +27,22 @@ public interface StockBlockRtInfoMapper {
     int updateByPrimaryKeySelective(StockBlockRtInfo record);
 
     int updateByPrimaryKey(StockBlockRtInfo record);
+    /**
+     * 需求说明: 沪深两市板块分时行情数据查询，以交易时间和交易总金额降序查询，取前10条数据
+     * @return
+     */
+    List<StockBlockRtInfoDomain> sectorAllLimit();
 
+    /**
+     *
+     * @param timePoint
+     * @return
+     */
+    List<StockUpdownDomain> stockIncreaseLimit(@Param("timePoint") Date timePoint);
+
+    /**
+     * 根据时间和涨幅降序排序全表查询
+     * @return
+     */
+    List<StockUpdownDomain> stockPage();
 }
