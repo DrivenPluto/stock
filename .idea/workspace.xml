@@ -5,35 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d8a6e6e-eac0-4ca0-ba3e-4a649a3cb339" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/common/utils/InnerMarketDomain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/common/utils/StockBlockRtInfoDomain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/common/utils/StockUpdownDomain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/config/vo/StockInfoConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/utils/DateTimeUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/vo/resp/PageResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stock_backend/src/test/java/com/pluto/stock/TestJodeDate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/common/utils/StockExcelDomain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/StockApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/StockApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock_backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/controller/StockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/controller/StockController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/mapper/StockBlockRtInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/mapper/StockBlockRtInfoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/mapper/StockMarketIndexInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/mapper/StockMarketIndexInfoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/pojo/StockBlockRtInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/pojo/StockBlockRtInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/service/StockService.java" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/service/StockService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/service/impl/StockServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/service/impl/StockServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stock_backend/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stock_backend/src/main/resources/mapper/StockBlockRtInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/src/main/resources/mapper/StockBlockRtInfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stock_backend/src/main/resources/mapper/StockMarketIndexInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/src/main/resources/mapper/StockMarketIndexInfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stock_backend/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/StockApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/StockApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/controller/StockController.class" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/controller/StockController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/mapper/StockBlockRtInfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/mapper/StockBlockRtInfoMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/mapper/StockMarketIndexInfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/mapper/StockMarketIndexInfoMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/pojo/StockBlockRtInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/pojo/StockBlockRtInfo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/service/StockService.class" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/service/StockService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/service/impl/StockServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/service/impl/StockServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/service/impl/UserServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stock_backend/target/classes/mapper/StockBlockRtInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/target/classes/mapper/StockBlockRtInfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stock_backend/target/classes/mapper/StockMarketIndexInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/target/classes/mapper/StockMarketIndexInfoMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,32 +69,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/plutodriven/java/IdeaProject/stock_parent/stock_parent/stock_backend/src/test/java/com/pluto/stock",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "editing.templates",
-    "spring.configuration.checksum": "66f18be16a655754e2b8100c67504e8a"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/plutodriven/java/IdeaProject/stock_parent/stock_parent/stock_backend/src/test/java/com/pluto/stock&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;66f18be16a655754e2b8100c67504e8a&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -176,10 +160,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.StockApplication" />
-        <item itemvalue="JUnit.TestJodeDate.testJode" />
         <item itemvalue="JUnit.TestRedisTemplate.test" />
+        <item itemvalue="JUnit.TestJodeDate.testJode" />
         <item itemvalue="Spring Boot.StockApplication" />
-        <item itemvalue="Spring Boot.StockApplication" />
+        <item itemvalue="JUnit.TestJodeDate.testJode" />
       </list>
     </recent_temporary>
   </component>
@@ -198,6 +182,8 @@
       <workItem from="1690377005077" duration="12569000" />
       <workItem from="1690554491459" duration="1697000" />
       <workItem from="1690556197961" duration="24605000" />
+      <workItem from="1691152512175" duration="3345000" />
+      <workItem from="1691160020673" duration="4731000" />
     </task>
     <task id="LOCAL-00001" summary="完成用户登陆">
       <created>1690467436995</created>
@@ -220,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690626207059</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="完成股票涨幅及更多涨幅功能 合并">
+      <created>1690903094956</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1690903094956</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,6 +233,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="完成用户登陆" />
     <MESSAGE value="完成验证码校验" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成验证码校验" />
+    <MESSAGE value="完成股票涨幅及更多涨幅功能 合并" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成股票涨幅及更多涨幅功能 合并" />
   </component>
 </project>

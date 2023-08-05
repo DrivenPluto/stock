@@ -13,7 +13,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletResponse;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/quot")
@@ -63,6 +65,25 @@ public class StockController {
     @GetMapping("/stock/all")
     public R<PageResult<StockUpdownDomain>> stockPage(Integer page,Integer pageSize){
         return stockService.stockPage(page,pageSize);
+    }
 
+    /**
+     * 统计T日（最近一次股票交易日)涨停和跌停分时统计
+     * @return
+     */
+    @GetMapping("/stock/updown/count")
+    public R<Map> getStockUpDowmCount(){
+        return stockService.getStockUpDowmCount();
+    }
+
+    /**
+     * 到处股票信息到excel下
+     * @param response http的响应对象，可获取流对象
+     * @param page  当前页
+     * @param pageSize 每页大小
+     */
+    @GetMapping("/stock/export")
+    public void stockExport(HttpServletResponse response,Integer page,Integer pageSize){
+        stockService.stockExport(response,page,pageSize);
     }
 }

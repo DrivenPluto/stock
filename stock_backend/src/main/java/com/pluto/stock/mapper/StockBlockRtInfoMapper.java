@@ -7,6 +7,7 @@ import org.apache.ibatis.annotations.Param;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 /**
 * @author plutodriven
@@ -45,4 +46,15 @@ public interface StockBlockRtInfoMapper {
      * @return
      */
     List<StockUpdownDomain> stockPage();
+
+    /**
+     *统计指定日期内涨停或者跌停的数据,日期范围不能失效，否则分库分表查询失效
+     * @param startTime 开始时间
+     * @param endTime   结束时间
+     * @param flag  标识 :1代表涨停，0代表跌停
+     * @return
+     */
+    List<Map> getStockUpDowmCount(@Param("startTime") Date startTime,
+                                  @Param("endTime") Date endTime,
+                                  @Param("flag") int flag);
 }

@@ -158,4 +158,26 @@
         from stock_rt_info as sri
         order by sri.cur_time desc, upDown desc
     </select>
+    <select id="getStockUpDowmCount" resultType="java.util.Map">
+        select
+        tmp.time as time,
+        count(*) as count
+        from
+        (
+        select
+        date_format(sri.cur_time,'%Y%m%d%H%i') as time,
+        (sri.cur_price-sri.pre_close_price)/sri.pre_close_price as upDown
+        from stock_rt_info as sri
+        where sri.cur_time between #{startTime} and #{endTime} having
+        <if test="flag==1">
+            upDown >=0.1
+        </if>
+        <if test="flag==0">
+            upDown &lt;=-0.1
+        </if>
+        ) as
+        tmp
+        group by tmp.time
+        order by tmp.time asc
+    </select>
 </mapper>

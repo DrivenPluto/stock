@@ -8,7 +8,9 @@ import com.pluto.stock.pojo.StockBusiness;
 import com.pluto.stock.vo.resp.PageResult;
 import com.pluto.stock.vo.resp.R;
 
+import javax.servlet.http.HttpServletResponse;
 import java.util.List;
+import java.util.Map;
 
 
 public interface StockService {
@@ -39,4 +41,18 @@ public interface StockService {
      * @return
      */
     R<PageResult<StockUpdownDomain>> stockPage(Integer page, Integer pageSize);
+
+    /**
+     * 统计T日（最近一次股票交易日)涨停和跌停分时统计
+     * @return
+     */
+    R<Map> getStockUpDowmCount();
+
+    /**
+     * 到处股票信息到excel下
+     * @param response http的响应对象，可获取流对象
+     * @param page  当前页
+     * @param pageSize 每页大小
+     */
+    void stockExport(HttpServletResponse response, Integer page, Integer pageSize);
 }
