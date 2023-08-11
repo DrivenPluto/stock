@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
 @SpringBootApplication
-@MapperScan("com.pluto.stock.mapper")
+//@MapperScan("com.pluto.stock.mapper")
 @EnableConfigurationProperties(StockInfoConfig.class)
 public class StockApplication {
     public static void main(String[] args) {

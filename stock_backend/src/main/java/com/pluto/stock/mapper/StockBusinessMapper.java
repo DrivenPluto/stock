@@ -1,6 +1,7 @@
 package com.pluto.stock.mapper;
 
 import com.pluto.stock.pojo.StockBusiness;
+import org.apache.ibatis.annotations.Mapper;
 
 
 import java.util.List;
@@ -11,6 +12,7 @@ import java.util.List;
 * @createDate 2023-07-26 21:45:32
 * @Entity com.pluto.stock.pojo.StockBusiness
 */
+@Mapper
 public interface StockBusinessMapper {
 
     int deleteByPrimaryKey(Long id);

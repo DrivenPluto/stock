@@ -50,6 +50,127 @@
                  left join stock_market_log_price as sml
                 on tmp.code=sml.market_code and	date_format(sml.cur_date,'%Y%m%d')=date_format(#{timePoint},'%Y%m%d')
     </select>
+    <select id="getStockTradeVol" resultType="map">
+        select
+            date_format(smi.cur_time,'%Y%m%d%H%i') as time,
+            sum(smi.trade_volume) as count
+        from stock_market_index_info as smi
+        where smi.mark_id in
+          <foreach collection="markedIds" item="marketId" open="(" separator="," close=")">
+              #{marketId}
+          </foreach>
+          and smi.cur_time between #{startTime} and #{endTime}
+        group by smi.cur_time
+        order by time asc;
+    </select>
+   <!-- <select id="getStockUpDownRegion" resultType="map">
+        SELECT
+            tmp2.title,
+            count(*) as count
+        FROM (SELECT
+                    CASE
+                        WHEN tmp.rate > 0.07 THEN '>7%'
+                        WHEN tmp.rate > 0.05 AND tmp.rate  &lt;= 0.07 THEN '5~7%'
+                        WHEN tmp.rate > 0.03 AND tmp.rate  &lt;= 0.05 THEN '3~5%'
+                        WHEN tmp.rate > 0 AND tmp.rate     &lt;= 0.03 THEN '0~3%'
+                        WHEN tmp.rate > -0.03 AND tmp.rate &lt;= 0 THEN '-3~0%'
+                        WHEN tmp.rate > -0.05 AND tmp.rate &lt;= -0.03 THEN '-5~-3%'
+                        WHEN tmp.rate > -0.07 AND tmp.rate &lt;= -0.05 THEN '-7~-5%'
+                        else '&lt; -7%'
+                    END 'title'
+              FROM (select
+                        (sri.cur_price-sri.pre_close_price)/sri.pre_close_price as rate
+                    FROM stock_rt_info as sri
+        where sri.cur_time = #{timePoint}) as tmp) as tmp2
+        group by tmp2.title;
+    </select>-->
+
+    <select id="getStockUpDownRegion" resultType="map">
+        <![CDATA[
+        SELECT
+            tmp2.title,
+            count(*) as count
+        FROM (SELECT
+                  CASE
+                      WHEN tmp.rate > 0.07 THEN '>7%'
+                      WHEN tmp.rate > 0.05 AND tmp.rate <= 0.07 THEN '5~7%'
+                      WHEN tmp.rate > 0.03 AND tmp.rate <= 0.05 THEN '3~5%'
+                      WHEN tmp.rate > 0 AND tmp.rate <= 0.03 THEN '0~3%'
+                      WHEN tmp.rate > -0.03 AND tmp.rate <= 0 THEN '-3~0%'
+                      WHEN tmp.rate > -0.05 AND tmp.rate <= -0.03 THEN '-5~-3%'
+                      WHEN tmp.rate > -0.07 AND tmp.rate <= -0.05 THEN '-7~-5%'
+                      else '<-7%'
+                      END 'title'
+              FROM (select
+                        (sri.cur_price-sri.pre_close_price)/sri.pre_close_price as rate
+                    FROM stock_rt_info as sri
+                    where sri.cur_time = #{timePoint}) as tmp) as tmp2
+        group by tmp2.title;
+
+
+        ]]>
+    </select>
+    <select id="getStockInfoByCodeAndDate" resultType="com.pluto.stock.common.utils.Stock4MinuteDomain">
+        select
+            date_format(sri.cur_time,'%Y%m%d%H%i') as date,
+            sri.trade_amount as tradeAmt,
+            sri.stock_code as code,
+            sri.min_price lowPrice,
+            sri.pre_close_price as preClosePrice,
+            sri.stock_name as name,
+            sri.max_price as highPrice,
+            sri.open_price as openPrice,
+            sri.trade_volume as tradeVol,
+            sri.cur_price as tradePrice
+        from stock_rt_info as sri
+        where	sri.stock_code=#{stockCode}
+          and sri.cur_time between #{startTime} and #{endTime}
+    </select>
+    <select id="getStockInfo4EvrDay" resultType="com.pluto.stock.common.utils.Stock4EvrDayDomain">
+        select
+            date_format(sri2.cur_time,'%Y%m%d') as date,
+            sri2.trade_amount as tradeAmt,
+            sri2.stock_code as code,
+            sri2.min_price as lowPrice,
+            sri2.stock_name as name,
+            sri2.max_price as highPrice,
+            sri2.open_price as openPrice,
+            sri2.trade_volume as tradeVol,
+            sri2.cur_price as closePrice,
+            sri2.pre_close_price as preClosePrice
+        from
+            stock_rt_info as sri2
+        where sri2.stock_code=#{stockCode} and sri2.cur_time in (
+            select
+                max(sri.cur_time) as closeDate
+            from stock_rt_info as sri
+            where sri.stock_code=#{stockCode} and sri.cur_time between #{startTime} and #{endTime}
+            group by date_format(sri.cur_time,'%Y%m%d')
+        )
+    </select>
+    <select id="getStockInfo4EvrWek" resultType="com.pluto.stock.common.utils.Stock4EvrWeekDomain">
+        select
+            date_format(sri2.cur_time,'%Y%m%d') as date,
+            sri2.trade_amount as tradeAmt,
+            sri2.stock_code as code,
+            sri2.min_price as lowPrice,
+            sri2.stock_name as name,
+            sri2.max_price as highPrice,
+            sri2.open_price as openPrice,
+            sri2.trade_volume as tradeVol,
+            sri2.cur_price as closePrice,
+            sri2.pre_close_price as preClosePrice
+        from
+            stock_rt_info as sri2
+        where sri2.stock_code=#{stockCode} and sri2.cur_time in (
+            select
+                max(sri.cur_time) as closeDate
+            from stock_rt_info as sri
+            where sri.stock_code=#{stockCode} and sri.cur_time between #{startTime} and #{endTime}
+            group by date_format(sri.cur_time,'%Y%m%d')
+        )
+    </select>
+
 
     <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
         delete from stock_market_index_info

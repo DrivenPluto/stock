@@ -3,6 +3,7 @@ package com.pluto.stock.mapper;
 import com.pluto.stock.common.utils.StockBlockRtInfoDomain;
 import com.pluto.stock.common.utils.StockUpdownDomain;
 import com.pluto.stock.pojo.StockBlockRtInfo;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.Date;
@@ -15,6 +16,7 @@ import java.util.Map;
 * @createDate 2023-07-26 21:45:32
 * @Entity com.pluto.stock.pojo.StockBlockRtInfo
 */
+@Mapper
 public interface StockBlockRtInfoMapper {
 
     int deleteByPrimaryKey(Long id);

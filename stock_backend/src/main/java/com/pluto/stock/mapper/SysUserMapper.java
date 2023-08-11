@@ -1,6 +1,7 @@
 package com.pluto.stock.mapper;
 
 import com.pluto.stock.pojo.SysUser;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 /**
@@ -9,6 +10,7 @@ import org.apache.ibatis.annotations.Param;
 * @createDate 2023-07-26 21:45:32
 * @Entity com.pluto.stock.pojo.SysUser
 */
+@Mapper
 public interface SysUserMapper {
 
     int deleteByPrimaryKey(Long id);

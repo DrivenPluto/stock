@@ -5,19 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d8a6e6e-eac0-4ca0-ba3e-4a649a3cb339" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/common/utils/StockExcelDomain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/common/utils/Stock4EvrDayDomain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/common/utils/Stock4EvrWeekDomain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/common/utils/Stock4MinuteDomain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stock_backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/StockApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/StockApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/config/vo/StockInfoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/config/vo/StockInfoConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/controller/StockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/controller/StockController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/mapper/StockBlockRtInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/mapper/StockBlockRtInfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/mapper/StockBusinessMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/mapper/StockBusinessMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/mapper/StockMarketIndexInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/mapper/StockMarketIndexInfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/mapper/SysUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/mapper/SysUserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/service/StockService.java" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/service/StockService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/service/impl/StockServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/src/main/java/com/pluto/stock/service/impl/StockServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stock_backend/src/main/resources/mapper/StockBlockRtInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/src/main/resources/mapper/StockBlockRtInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock_backend/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock_backend/src/main/resources/mapper/StockMarketIndexInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/src/main/resources/mapper/StockMarketIndexInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock_backend/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock_backend/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/StockApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/StockApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/config/vo/StockInfoConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/config/vo/StockInfoConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/controller/StockController.class" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/controller/StockController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/mapper/StockBlockRtInfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/mapper/StockBlockRtInfoMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/mapper/StockBusinessMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/mapper/StockBusinessMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/mapper/StockMarketIndexInfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/mapper/StockMarketIndexInfoMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/mapper/SysUserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/mapper/SysUserMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/service/StockService.class" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/service/StockService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/service/impl/StockServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/target/classes/com/pluto/stock/service/impl/StockServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stock_backend/target/classes/mapper/StockBlockRtInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/target/classes/mapper/StockBlockRtInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock_backend/target/classes/mapper/StockMarketIndexInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stock_backend/target/classes/mapper/StockMarketIndexInfoMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

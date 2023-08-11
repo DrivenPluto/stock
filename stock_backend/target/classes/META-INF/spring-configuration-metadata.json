@@ -16,6 +16,11 @@
       "name": "stock.outer",
       "type": "java.util.List<java.lang.String>",
       "sourceType": "com.pluto.stock.config.vo.StockInfoConfig"
+    },
+    {
+      "name": "stock.up-down-range",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.pluto.stock.config.vo.StockInfoConfig"
     }
   ],
   "hints": []
