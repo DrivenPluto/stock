@@ -8,8 +8,20 @@
   ],
   "properties": [
     {
+      "name": "stock.block-url",
+      "type": "java.lang.String",
+      "description": "板块url",
+      "sourceType": "com.pluto.stock.config.vo.StockInfoConfig"
+    },
+    {
       "name": "stock.inner",
       "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.pluto.stock.config.vo.StockInfoConfig"
+    },
+    {
+      "name": "stock.market-url",
+      "type": "java.lang.String",
+      "description": "大盘参数url地址",
       "sourceType": "com.pluto.stock.config.vo.StockInfoConfig"
     },
     {

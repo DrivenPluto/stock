@@ -1,6 +1,7 @@
 package com.pluto.stock.config;
 
 import com.pluto.stock.utils.IdWorker;
+import com.pluto.stock.utils.ParserStockInfoUtil;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -21,5 +22,10 @@ public class CommonConfig {
     @Bean
     public IdWorker idWorker(){
         return new IdWorker(2L,1L);
+    }
+
+    @Bean
+    public ParserStockInfoUtil parserStockInfoUtil(IdWorker idWorker){
+        return new ParserStockInfoUtil(idWorker);
     }
 }

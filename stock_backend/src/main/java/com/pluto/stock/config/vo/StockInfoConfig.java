@@ -19,4 +19,12 @@ public class StockInfoConfig {
     private List<String> outer;
     //股票区间
     private List<String>  upDownRange;
+    /**
+     * 大盘参数url地址
+     */
+    private String  marketUrl;
+    /**
+     * 板块url
+     */
+    private String  blockUrl;
 }

@@ -212,6 +212,35 @@
                 <if test="tradeVolume != null">trade_volume = #{tradeVolume,jdbcType=BIGINT},</if>
         </trim>
     </insert>
+    <insert id="insertBatch">
+        insert into stock_market_index_info
+        ( id,mark_Id,cur_time
+            ,mark_name,cur_point,current_price
+            ,updown_rate,trade_account,trade_volume
+        )
+        values 
+        <foreach collection="stockMarketInfoList" item="smi" separator=",">
+            (#{smi.id,jdbcType=VARCHAR},#{smi.markId,jdbcType=CHAR},#{smi.curTime,jdbcType=TIMESTAMP}
+            ,#{smi.markName,jdbcType=VARCHAR},#{smi.curPoint,jdbcType=DECIMAL},#{smi.currentPrice,jdbcType=DECIMAL}
+            ,#{smi.updownRate,jdbcType=DECIMAL},#{smi.tradeAccount,jdbcType=BIGINT},#{smi.tradeVolume,jdbcType=BIGINT}
+            )
+        </foreach>
+
+    </insert>
+    <insert id="insertBlock">
+        insert into stock_block_rt_info
+        ( id,label,block_name
+        ,company_num,avg_price,updown_rate
+        ,trade_amount,trade_volume,cur_time
+        )
+        values
+        <foreach collection="list" item="bi" separator=",">
+            (#{bi.id,jdbcType=BIGINT},#{bi.label,jdbcType=VARCHAR},#{bi.blockName,jdbcType=VARCHAR}
+            ,#{bi.companyNum,jdbcType=INTEGER},#{bi.avgPrice,jdbcType=DECIMAL},#{bi.updownRate,jdbcType=DECIMAL}
+            ,#{bi.tradeAmount,jdbcType=BIGINT},#{bi.tradeVolume,jdbcType=DECIMAL},#{bi.curTime,jdbcType=TIMESTAMP}
+            )
+        </foreach>
+    </insert>
     <update id="updateByPrimaryKeySelective" parameterType="com.pluto.stock.pojo.StockMarketIndexInfo">
         update stock_market_index_info
         <set>

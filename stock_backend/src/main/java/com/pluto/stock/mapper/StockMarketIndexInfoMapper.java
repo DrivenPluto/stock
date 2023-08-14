@@ -4,10 +4,12 @@ import com.pluto.stock.common.utils.InnerMarketDomain;
 import com.pluto.stock.common.utils.Stock4EvrDayDomain;
 import com.pluto.stock.common.utils.Stock4EvrWeekDomain;
 import com.pluto.stock.common.utils.Stock4MinuteDomain;
+import com.pluto.stock.pojo.StockBlockRtInfo;
 import com.pluto.stock.pojo.StockMarketIndexInfo;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
@@ -90,4 +92,16 @@ public interface StockMarketIndexInfoMapper {
     List<Stock4EvrWeekDomain> getStockInfo4EvrWek(@Param("stockCode") String stockCode,
                                                   @Param("startTime") Date startTime,
                                                   @Param("endTime") Date endTime);
+
+    /**
+     * 批量保存大盘数据
+     * @param list 大盘数据集合
+     */
+    void insertBatch(@Param("stockMarketInfoList") List<StockMarketIndexInfo> list);
+
+    /**
+     * 板块信息批量插入
+     * @param list 板块集合
+     */
+    void insertBlock(@Param("list") List<StockBlockRtInfo> list);
 }
